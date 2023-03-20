@@ -25,6 +25,7 @@ export default function Home() {
         </div>
         <div className="lg:col-span-4 col-span-1">
           <div className="lg:sticky relative top-8">
+
           </div>
         </div>
       </div>
