@@ -50,6 +50,7 @@ export const getPostDetails = async (slug) => {
         author {
           name
           bio
+          id
           photo {
             url
           }
@@ -70,7 +71,7 @@ export const getPostDetails = async (slug) => {
   const result = await request(graphqlAPI, query, { slug });
 
   return result.post;
-}; 
+};
 
 export const getCategories = async () => {
   const query = gql`
