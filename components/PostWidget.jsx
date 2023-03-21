@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import moment from 'moment';
+import Link from 'next/link';
 
 const PostWidget = () => {
   return (
@@ -6,4 +8,4 @@ const PostWidget = () => {
   )
 }
 
-export default PostWidget
+export default PostWidget;
