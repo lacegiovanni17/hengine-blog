@@ -22,7 +22,7 @@ const PostCard = ({ post }) => {
       <div className="block lg:flex text-center items-center justify-center mb-8 w-full">
         <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8 ">
           <Image
-            src="/images/author.png"
+            // src="/images/author.png"
             alt={post.author.name}
             height="30"
             width="30"
