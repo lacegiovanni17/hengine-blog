@@ -8,14 +8,16 @@ import { PostCard, Categories, Loader } from "../../components";
 const CategoryPost = ({ posts }) => {
   const [postCategory, setPostCategory] = useState("");
   useEffect(() => {
-    if (posts[0].node.categories.length > 1) {
-      setPostCategory(
-        posts[0].node.categories[posts[0].node.categories.length - 1].name
-      );
-    } else {
-      setPostCategory(posts[0].node.categories[0].name);
+    if (posts && posts.length > 0) {
+      if (posts[0].node.categories.length > 1) {
+        setPostCategory(
+          posts[0].node.categories[posts[0].node.categories.length - 1].name
+        );
+      } else {
+        setPostCategory(posts[0].node.categories[0].name);
+      }
     }
-  });
+  }, [posts]);
   const router = useRouter();
 
   if (router.isFallback) {
